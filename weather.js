@@ -52,10 +52,8 @@ function forcast(tx) {
         var hotHot = $('<p>').text('Temperature : ' + response.main.temp + ' °F ');
         var sweat = $('<p>').text('Humidity : ' + response.main.humidity + '%');
         var tornato = $('<p>').text('Wind Speed : ' + response.wind.speed + 'MPH');       
-       // var uvIndexcoord = '&lat=' + response.coord.lat + '&lon=' + response.coord.lon;
         var block = response.id;
 
-       // displayUVindex(uvIndexcoord);
         pluckers(block);
 
         sectionA.append(image).append(hotHot).append(sweat).append(tornato);
